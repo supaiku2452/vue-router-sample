@@ -1,23 +1,12 @@
-# Vue.js application project template for module type.
-Vue.jsをモジュール版で始める時のテンプレートプロジェクト。
-vue-cliではいろんなものが入るので、軽量版としてつかう。
+# Vue.js + vue-router sample application.
+Vue.js + vue-router + Elementを使用したサンプルアプリケーション。
+Vue.jsはWebpackでビルドし、サーバはWebpack-dev-serverを利用する。
 
-## パッケージ
-- babel-core
-- babel-loader
-- babel-preset-env
-- css-loader
-- html-webpack-plugin
-- style-loader
-- vue
-- vue-loader
-- vue-template-compiler
-- webpack
-- webpack-dev-server
+## インストール
+1. `npm install`
+2. `npm start`
 
-## コマンド
-- `npm run build` Vueのビルド    
-- `npm run start` サーバ(webpack-dev-server)開始
-
-## URL
-`http://localhost:3000/`
+## 参考
+- [Vue.js - Official](https://jp.vuejs.org/index.html)
+- [vue-router - Official](https://router.vuejs.org/ja/)
+- [Element - Official](http://element.eleme.io/#/en-US)
