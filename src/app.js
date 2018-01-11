@@ -1,5 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
+import Vuex from "vuex";
 
 import Main from "./component/Main.vue";
 import Home from "./pages/Home.vue";
@@ -13,6 +14,7 @@ import "element-ui/lib/theme-chalk/index.css";
 
 Vue.use(VueRouter);
 Vue.use(Element, {locale});
+Vue.use(Vuex);
 
 const routes = [
     { path: "/", name: "home", component: Home },
@@ -24,11 +26,26 @@ const router = new VueRouter({
     routes
 });
 
+const store = new Vuex.Store({
+   state: {
+       count: 0
+   },
+    mutations: {
+       add(state) {
+           state.count++;
+       },
+       remove(state) {
+           state.count--;
+       }
+    }
+});
+
 new Vue({
     el: "#main",
     components: {
         mainComponent: Main,
     },
     template: "<mainComponent></mainComponent>",
-    router
+    router,
+    store
 }).$mount("#main");

@@ -30,6 +30,7 @@
                 </el-form-item>
                 <el-button type="primary" icon="el-icon-success">Submit</el-button>
             </el-form>
+
         </el-main>
     </div>
 </template>
@@ -52,7 +53,7 @@
                     {id: 3, name: "hage", rank: 3, score: 3},
                 ]
             }
-        }
+        },
     }
 </script>
 
